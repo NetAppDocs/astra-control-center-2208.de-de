@@ -13,7 +13,7 @@ summary: Sie können Pakete auf Astra Control Center hochladen und installieren.
 
 NetApp bietet zusätzliche Funktionen für Astra Control Center mit Software-Paketen, die Sie von der NetApp Support-Website herunterladen können. Nachdem Sie Docker- und Artefakt-Repositorys verbunden haben, können Sie Pakete hochladen und importieren, um diese Funktion dem Astra Control Center hinzuzufügen. Sie können Softwarepakete über die CLI oder die Weboberfläche des Astra Control Center verwalten.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * Kubernetes-Cluster mit installiertem Astra Control Center
 * Ein verbundenes Docker-Image-Repository zur Speicherung von Software-Paket-Images. Weitere Informationen finden Sie unter link:manage-connections.html["Repository-Verbindungen verwalten"].
 * Ein verbundenes Artefakt-Repository zur Speicherung von Binärdateien und Artefakten für Softwarepakete Weitere Informationen finden Sie unter link:manage-connections.html["Repository-Verbindungen verwalten"].
@@ -71,6 +71,7 @@ Sie können Softwarepakete mit einer Astra Control Center-Paketdatei importieren
 . Wählen Sie *Hinzufügen*.
 
 
+.Ergebnis
 Wenn die Bundle-Datei gültig ist und sich die Paketbilder und Artefakte in den angeschlossenen Repositorys befinden, wird das Paket dem Astra Control Center hinzugefügt. Wenn der Status in der Spalte *Status* in *verfügbar* wechselt, können Sie das Paket verwenden. Sie können den Mauszeiger auf den Status eines Pakets bewegen, um weitere Informationen zu erhalten.
 
 
@@ -104,6 +105,7 @@ kubectl astra packages import -m BUNDLE_FILE -u SERVER -a ACCOUNT_ID -k TOKEN
 
 
 
+.Ergebnis
 Wenn die Bundle-Datei gültig ist und sich die Paketbilder und Artefakte in den angeschlossenen Repositorys befinden, wird das Paket dem Astra Control Center hinzugefügt.
 
 
@@ -125,6 +127,7 @@ Auf dieser Seite sehen Sie die Liste der installierten Pakete und deren Status.
 . Wählen Sie *Löschen*.
 
 
+.Ergebnis
 Das Paket wird aus dem Astra Control Center gelöscht, aber die Bilder und Artefakte für das Paket verbleiben in Ihren Repositorys.
 
 [discrete]

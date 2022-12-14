@@ -47,6 +47,7 @@ NOTE: Von NetApp wurden in dieser Version standardmäßige Pre- und Post-Snapsho
 == 26. April 2022 (22.04.0)
 
 .Details
+[%collapsible]
 ====
 .Neue Funktionen und Support
 * https://docs.netapp.com/us-en/astra-control-center-2204/get-started/setup_overview.html#add-a-storage-backend["Implementierung des Astra Data Stores über das Astra Control Center"]
@@ -69,6 +70,7 @@ NOTE: Von NetApp wurden in dieser Version standardmäßige Pre- und Post-Snapsho
 == Bis 14. Dezember 2021 (21.12)
 
 .Details
+[%collapsible]
 ====
 .Neue Funktionen und Support
 * https://docs.netapp.com/us-en/astra-control-center-2112/use/restore-apps.html["Applikationswiederherstellung"^]
@@ -96,6 +98,7 @@ NOTE: Von NetApp wurden in dieser Version standardmäßige Pre- und Post-Snapsho
 == August 5 2021 (21.08)
 
 .Details
+[%collapsible]
 ====
 Erste Version des Astra Control Center.
 

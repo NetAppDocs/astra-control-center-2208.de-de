@@ -16,6 +16,7 @@ Eine vorhandene Applikation klonen, um eine doppelte Applikation auf demselben K
 
 Das Klonen kann sich leisten, wenn Sie Applikationen und Storage von einem Kubernetes Cluster zu einem anderen verschieben müssen. So möchten Sie beispielsweise Workloads über eine CI/CD-Pipeline und über Kubernetes-Namespaces verschieben. Sie können die Astra UI oder verwenden https://docs.netapp.com/us-en/astra-automation/index.html["Die Astra Control API"^] Zum Klonen und Migrieren von Applikationen
 
+.Was Sie benötigen
 Zum Klonen von Applikationen auf einem anderen Cluster benötigen Sie einen Standard-Bucket. Wenn Sie einen ersten Bucket hinzufügen, wird dieser zum Standard-Bucket.
 
 .Über diese Aufgabe
@@ -58,6 +59,7 @@ Zum Klonen von Applikationen auf einem anderen Cluster benötigen Sie einen Stan
 . *Clone Summary*: Überprüfen Sie die Details über den Klon und wählen Sie *Clone*.
 
 
+.Ergebnis
 Astra Control Center klont die App basierend auf den von Ihnen angegebenen Informationen. Der Klonvorgang ist erfolgreich, wenn der neue Applikationsklon im ausgeführt wird `Available` Geben Sie auf der Seite *Anwendungen* an.
 
 

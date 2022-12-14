@@ -13,7 +13,7 @@ summary: Zum Upgrade von Astra Control Center laden Sie das Paket herunter und f
 
 Laden Sie zum Upgrade des Astra Control Center das Installationspaket von der NetApp Support Site herunter und führen Sie diese Anweisungen aus, um die Komponenten des Astra Control Center in Ihrer Umgebung zu aktualisieren. Mit diesem Verfahren können Sie das Astra Control Center in internetverbundenen oder luftgekapderten Umgebungen aktualisieren.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * link:../get-started/requirements.html["Bevor Sie mit dem Upgrade beginnen, stellen Sie sicher, dass Ihre Umgebung auch die Mindestanforderungen für die Implementierung des Astra Control Center erfüllt"].
 * Stellen Sie sicher, dass alle Cluster Operator in einem ordnungsgemäßen Zustand und verfügbar sind.
 +
@@ -30,16 +30,17 @@ kubectl get apiservices
 * Melden Sie sich von Ihrem Astra Control Center ab.
 
 
+.Über diese Aufgabe
 Der Astra Control Center Upgrade-Prozess führt Sie durch die folgenden grundlegenden Schritte:
 
-*  the Astra Control Center bundle
-*  the bundle and change directory
-*  the images to your local registry
-*  the updated Astra Control Center operator
-*  Astra Control Center
-*  third-party services (Optional)
-*  system status
-*  up ingress for load balancing
+* <<Laden Sie das Astra Control Center Bundle herunter>>
+* <<Packen Sie das Paket aus und ändern Sie das Verzeichnis>>
+* <<Fügen Sie die Bilder Ihrer lokalen Registrierung hinzu>>
+* <<Installieren Sie den aktualisierten Astra Control Center-Operator>>
+* <<Upgrade Astra Control Center>>
+* <<Upgrade von Services von Drittanbietern (optional)>>
+* <<Überprüfen Sie den Systemstatus>>
+* <<Eindringen für den Lastenausgleich einrichten>>
 
 
 
@@ -173,8 +174,8 @@ vim astra_control_center_operator_deploy.yaml
 imagePullSecrets:
 - name: <name_of_secret_with_creds_to_local_registry>
 ----
-.. Ändern `[your_registry_path]` Für das `kube-rbac-proxy` Bild zum Registrierungspfad, in dem Sie die Bilder in ein geschoben haben ,Vorheriger Schritt.
-.. Ändern `[your_registry_path]` Für das `acc-operator-controller-manager` Bild zum Registrierungspfad, in dem Sie die Bilder in ein geschoben haben ,Vorheriger Schritt.
+.. Ändern `[your_registry_path]` Für das `kube-rbac-proxy` Bild zum Registrierungspfad, in dem Sie die Bilder in ein geschoben haben <<substep_image_local_registry_push,Vorheriger Schritt>>.
+.. Ändern `[your_registry_path]` Für das `acc-operator-controller-manager` Bild zum Registrierungspfad, in dem Sie die Bilder in ein geschoben haben <<substep_image_local_registry_push,Vorheriger Schritt>>.
 .. Fügen Sie dem die folgenden Werte hinzu `env` Abschnitt:
 +
 [listing]
@@ -275,7 +276,7 @@ kubectl edit acc -n [netapp-acc or custom namespace]
 ----
 +
 
-NOTE: Ihr Registrierungspfad muss mit dem Registrierungspfad übereinstimmen, in dem Sie die Bilder in A verschoben haben ,Vorheriger Schritt.
+NOTE: Ihr Registrierungspfad muss mit dem Registrierungspfad übereinstimmen, in dem Sie die Bilder in A verschoben haben <<substep_image_local_registry_push,Vorheriger Schritt>>.
 
 . Fügen Sie die folgenden Zeilen in hinzu `additionalValues` Innerhalb von `Spec` Im Astra Control Center CR:
 +
@@ -405,7 +406,7 @@ Die Schritte unterscheiden sich je nach Art des Ingress-Controllers, den Sie ver
 * OpenShift-Eingangs-Controller
 
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * In der CR-Spezifikation
 +
 ** Wenn `crd.externalTraefik` Ist vorhanden, sollte auf festgelegt werden `false` ODER

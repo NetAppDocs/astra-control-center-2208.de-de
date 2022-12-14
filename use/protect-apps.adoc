@@ -23,13 +23,13 @@ Wenn Sie ein Projekt zum Hosten einer App auf einem OpenShift-Cluster erstellen,
 
 Sie können die folgenden Aufgaben zum Schutz Ihrer Applikationsdaten ausführen:
 
-*  a protection policy
-*  a snapshot
-*  a backup
-*  snapshots and backups
-*  snapshots
-*  backups
-*  backups
+* <<Konfigurieren einer Sicherungsrichtlinie>>
+* <<Erstellen Sie einen Snapshot>>
+* <<Erstellen Sie ein Backup>>
+* <<Anzeigen von Snapshots und Backups>>
+* <<Snapshots löschen>>
+* <<Abbrechen von Backups>>
+* <<Backups löschen>>
 
 
 
@@ -56,6 +56,7 @@ image:screenshot-config-protection-policy.png["Einen Screenshot einer Beispielko
 . Wählen Sie *Schutzrichtlinie Festlegen.*
 
 
+.Ergebnis
 Astra Control Center implementiert die Datensicherungsrichtlinien, indem Snapshots und Backups mithilfe der von Ihnen definierten Zeitplan- und Aufbewahrungsrichtlinie erstellt und aufbewahrt werden.
 
 
@@ -71,6 +72,7 @@ Sie können jederzeit einen On-Demand-Snapshot erstellen.
 . Überprüfen Sie die Snapshot-Zusammenfassung und wählen Sie *Snapshot*.
 
 
+.Ergebnis
 Der Snapshot-Prozess beginnt. Ein Snapshot ist erfolgreich, wenn der Status *verfügbar* in der Spalte *Aktionen* auf der Seite *Datenschutz* > *Snapshots* steht.
 
 
@@ -92,13 +94,14 @@ NOTE: S3 Buckets im Astra Control Center berichten nicht über die verfügbare K
 . Überprüfen Sie die Backup-Zusammenfassung und wählen Sie *Backup*.
 
 
+.Ergebnis
 Astra Control Center erstellt ein Backup der App.
 
 
 NOTE: Wenn Ihr Netzwerk ausfällt oder ungewöhnlich langsam ist, kann es zu einer Zeit für einen Backup-Vorgang kommen. Dies führt zum Fehlschlagen der Datensicherung.
 
 
-NOTE: Es gibt keine Möglichkeit, ein ausgelaufes Backup zu stoppen. Wenn Sie das Backup löschen müssen, warten Sie, bis es abgeschlossen ist, und befolgen Sie die Anweisungen unter  backups. So löschen Sie ein fehlgeschlagenes Backup: https://docs.netapp.com/us-en/astra-automation/index.html["Verwenden Sie die Astra Control API"^].
+NOTE: Es gibt keine Möglichkeit, ein ausgelaufes Backup zu stoppen. Wenn Sie das Backup löschen müssen, warten Sie, bis es abgeschlossen ist, und befolgen Sie die Anweisungen unter <<Backups löschen>>. So löschen Sie ein fehlgeschlagenes Backup: https://docs.netapp.com/us-en/astra-automation/index.html["Verwenden Sie die Astra Control API"^].
 
 
 NOTE: Nach einer Datensicherungsoperation (Klonen, Backup, Restore) und einer anschließenden Anpassung des persistenten Volumes beträgt die Verzögerung bis zu zwanzig Minuten, bevor die neue Volume-Größe in der UI angezeigt wird. Der Datensicherungsvorgang ist innerhalb von Minuten erfolgreich und Sie können mit der Management Software für das Storage-Backend die Änderung der Volume-Größe bestätigen.
@@ -134,6 +137,7 @@ NOTE: Eine Snapshot Kopie, die derzeit repliziert wird, kann nicht gelöscht wer
 . Geben Sie das Wort „Löschen“ ein, um das Löschen zu bestätigen und wählen Sie dann *Ja, Snapshot löschen* aus.
 
 
+.Ergebnis
 Astra Control Center löscht den Snapshot.
 
 
@@ -170,4 +174,5 @@ NOTE: Es gibt keine Möglichkeit, ein ausgelaufes Backup zu stoppen. Wenn Sie da
 . Geben Sie das Wort „Löschen“ ein, um das Löschen zu bestätigen und wählen Sie dann *Ja, Sicherung löschen*.
 
 
+.Ergebnis
 Astra Control Center löscht das Backup.

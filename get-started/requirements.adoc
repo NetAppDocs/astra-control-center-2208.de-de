@@ -13,16 +13,16 @@ summary: 'Erste Schritte mit Astra Control Center: Überprüfen Sie die Unterst�
 
 Prüfen Sie zunächst die Bereitschaft Ihrer Betriebsumgebung, Anwendungscluster, Applikationen, Lizenzen und Ihres Webbrowsers.
 
-*  environment requirements
-*  storage backends
-*  cluster requirements
-*  management requirements
-*  prerequisites
-*  to the internet
-* 
-*  for on-premises Kubernetes clusters
-*  requirements
-*  web browsers
+* <<Anforderungen an die Betriebsumgebung>>
+* <<Unterstützte Storage-Back-Ends>>
+* <<Anforderungen für Applikationscluster>>
+* <<Anforderungen für das Applikationsmanagement>>
+* <<Replikationsvoraussetzungen>>
+* <<Zugang zum Internet>>
+* <<Lizenz>>
+* <<Ingress für lokale Kubernetes Cluster>>
+* <<Netzwerkanforderungen>>
+* <<Unterstützte Webbrowser>>
 
 
 
@@ -309,6 +309,6 @@ Astra Control Center unterstützt aktuelle Versionen von Firefox, Safari und Chr
 
 
 
-== Was kommt als Nächstes
+== Wie es weiter geht
 
 Sehen Sie sich die an link:quick-start.html["Schnellstart"] Überblick.

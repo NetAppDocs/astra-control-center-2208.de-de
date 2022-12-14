@@ -15,7 +15,7 @@ Sie sollten sicherstellen, dass die Voraussetzungen erfüllt sind, bevor Sie ein
 
 
 
-== Was Sie benötigen, bevor Sie ein Cluster hinzufügen
+== Was benötigen Sie vor dem Hinzufügen eines Clusters
 
 Vergewissern Sie sich, dass Ihr Cluster die in aufgeführten Anforderungen erfüllt link:requirements.html#application-cluster-requirements["Anforderungen für Applikationscluster"].
 

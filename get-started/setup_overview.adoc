@@ -14,10 +14,10 @@ summary: Nach der Installation von Astra Control Center, melden Sie sich in der 
 Astra Control Center unterstützt und überwacht ONTAP und Astra Data Store als Storage-Backend. Nach der Installation von Astra Control Center, melden Sie sich in der UI an und ändern Sie Ihr Passwort, Sie möchten eine Lizenz einrichten, Cluster hinzufügen, Speicher verwalten und Buckets hinzufügen.
 
 .Aufgaben
-*  a license for Astra Control Center
-*  cluster
-*  a storage backend
-*  a bucket
+* <<Fügen Sie eine Lizenz für Astra Control Center hinzu>>
+* <<Cluster hinzufügen>>
+* <<Fügen Sie ein Storage-Back-End hinzu>>
+* <<Fügen Sie einen Bucket hinzu>>
 
 
 
@@ -38,6 +38,7 @@ Sie können das Astra Control Center auch mit einer Evaluierungslizenz ausprobie
 
 NOTE: Wenn Ihre Installation die Anzahl der lizenzierten CPU-Einheiten überschreitet, verhindert Astra Control Center die Verwaltung neuer Anwendungen. Bei Überschreitung der Kapazität wird eine Meldung angezeigt.
 
+.Was Sie benötigen
 Wenn Sie Astra Control Center von heruntergeladen https://mysupport.netapp.com/site/products/all/details/astra-control-center/downloads-tab["NetApp Support Website"^], Sie haben auch die NetApp Lizenzdatei (NLF) heruntergeladen. Stellen Sie sicher, dass Sie Zugriff auf diese Lizenzdatei haben.
 
 .Schritte
@@ -67,11 +68,11 @@ TIP: Wir empfehlen, dass Astra Control Center den Cluster, der zuerst bereitgest
 Wenn Astra Control einen Cluster verwaltet, wird die Standard-Storage-Klasse des Clusters überwacht. Wenn Sie die Speicherklasse mit ändern `kubectl` Befehle, Astra Control setzt die Änderung zurück. Verwenden Sie eine der folgenden Methoden, um die Standard-Storage-Klasse in einem von Astra Control gemanagten Cluster zu ändern:
 
 * Verwenden Sie die Astra Control API `PUT /managedClusters` endpunkt, und weisen Sie dem eine andere Standard-Speicherklasse zu `DefaultStorageClass` Parameter.
-* Verwenden Sie die Web-UI von Astra Control, um eine andere Standard-Storage-Klasse zuzuweisen. Siehe  the default storage class.
+* Verwenden Sie die Web-UI von Astra Control, um eine andere Standard-Storage-Klasse zuzuweisen. Siehe <<Ändern der Standard-Storage-Klasse>>.
 
 
 ====
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * Bevor Sie ein Cluster hinzufügen, überprüfen und führen Sie die erforderlichen Maßnahmen durch link:add-cluster-reqs.html["Erforderliche Aufgaben"^].
 
 
@@ -102,6 +103,7 @@ image:cluster-storage.png["Zeigt die Storage-Klasse, die für das Cluster verwen
 . Überprüfen Sie die Informationen, und wenn alles gut aussieht, wählen Sie *Cluster hinzufügen*.
 
 
+.Ergebnis
 Der Cluster wechselt in den *Entdeckungs*-Status und dann in *running*. Sie haben erfolgreich ein Kubernetes-Cluster hinzugefügt und verwalten es jetzt im Astra Control Center.
 
 
@@ -115,7 +117,7 @@ Sie können ein Storage-Backend hinzufügen, sodass Astra Control die Ressourcen
 
 Durch das Management von Storage-Clustern in Astra Control als Storage-Backend können Sie Verbindungen zwischen persistenten Volumes (PVS) und dem Storage-Backend sowie zusätzliche Storage-Kennzahlen abrufen.
 
-.Was Sie&#8217;ll Bedarf an vorhandenen Astra Data Store-Bereitstellungen
+.Was Sie für bestehende Implementierungen von Astra Data Store benötigen
 * Sie haben Ihren Kubernetes-App-Cluster und das zugrunde liegende Computing-Cluster hinzugefügt.
 +
 
@@ -123,15 +125,15 @@ IMPORTANT: Nachdem Sie Ihren Kubernetes App-Cluster für Astra Data Store hinzug
 
 
 
-.Was Sie&#8217;ll benötigen für neue Astra Data Store-Bereitstellungen
+.Was Sie für die neuen Astra Data Store Implementierungen benötigen
 * Das ist schon link:../use/manage-packages-acc.html["Die Version des Installationspakets, das Sie bereitstellen möchten, hochgeladen haben"] Zu einem Ort, der für Astra Control zugänglich ist.
 * Sie haben den Kubernetes-Cluster hinzugefügt, den Sie für die Implementierung verwenden möchten.
-* Sie haben die hochgeladen  a license for Astra Control Center,Astra Data Store-Lizenz Für Ihre Implementierung an einen Standort, auf den Astra Control zugreifen kann.
+* Sie haben die hochgeladen <<Fügen Sie eine Lizenz für Astra Control Center hinzu,Astra Data Store-Lizenz>> Für Ihre Implementierung an einen Standort, auf den Astra Control zugreifen kann.
 
 
 .Optionen
-*  storage resources
-*  an existing storage backend
+* <<Implementieren von Storage-Ressourcen>>
+* <<Verwenden Sie ein vorhandenes Storage-Back-End>>
 
 
 
@@ -205,6 +207,7 @@ NOTE: Erstellen Sie für jeden Node mindestens drei eindeutige Beschriftungen f�
 . Überprüfen Sie die Konfiguration und wählen Sie *Bereitstellen*, um mit der Installation zu beginnen.
 
 
+.Ergebnis
 Nach erfolgreicher Installation erscheint das Backend in `available` Geben Sie in der Back-Ends-Liste zusammen mit aktiven Performance-Informationen an.
 
 
@@ -254,6 +257,7 @@ NOTE: Der Benutzer, dessen Anmeldeinformationen Sie hier eingeben, muss über de
 
 
 
+.Ergebnis
 Das Backend wird in angezeigt `available` Status in der Liste mit Zusammenfassungsinformationen.
 
 
@@ -308,7 +312,7 @@ TIP: Der Bucket-Name und die Beschreibung erscheinen als Backup-Speicherort, den
 
 NOTE: Diese Option wird nicht für den ersten von Ihnen erstellten Bucket angezeigt.
 
-.. Mit Hinzufügen fortfahren  S3 access credentials,Anmeldeinformationen.
+.. Mit Hinzufügen fortfahren <<Fügen Sie S3-Zugriffsdaten hinzu,Anmeldeinformationen>>.
 
 
 

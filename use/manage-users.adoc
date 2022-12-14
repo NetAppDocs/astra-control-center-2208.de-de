@@ -143,6 +143,7 @@ Wenn es keine Einschränkungen gibt, können Sie eine Bedingung hinzufügen. Wei
 . Wählen Sie *Bestätigen*.
 
 
+.Ergebnis
 Astra Control Center aktualisiert die Benutzerberechtigungen auf der Grundlage der neuen Rolle, die Sie ausgewählt haben.
 
 
@@ -158,4 +159,5 @@ Benutzer mit der Eigentümer- oder Administratorrolle können jederzeit andere B
 . Wenn Sie aufgefordert werden, bestätigen Sie den Löschvorgang, indem Sie das Wort "Entfernen" eingeben und dann *Ja, Benutzer entfernen* wählen.
 
 
+.Ergebnis
 Astra Control Center entfernt den Benutzer aus dem Konto.

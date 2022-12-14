@@ -13,7 +13,7 @@ summary: Sie können Pakete auf Astra Control Center hochladen und installieren.
 
 Repositories können mit Astra Control verbunden werden, um als Referenz für Installationsabbilder und Artefakte für Softwarepakete zu verwenden. Beim Importieren von Softwarepaketen verweist Astra Control auf Installationsabbilder im Image Repository sowie auf Binärdateien und andere Artefakte im Artefakt-Repository.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * Kubernetes-Cluster mit installiertem Astra Control Center
 * Ein ausgelaufes Docker Repository, auf das Sie zugreifen können
 * Ein ausgeführten Artefakt-Repository (z. B. Artifactory), auf das Sie zugreifen können
@@ -35,6 +35,7 @@ Sie können ein Docker-Image-Repository anschließen, um Installations-Images f�
 . Wählen Sie *Verbinden*.
 
 
+.Ergebnis
 Das Repository ist verbunden. Im Abschnitt * Docker Image Repository* sollte im Repository ein verbundener Status angezeigt werden.
 
 
@@ -51,6 +52,7 @@ Sie können die Verbindung zu einem Docker-Image-Repository entfernen, wenn sie 
 . Wählen Sie *Ja, Docker Image Repository trennen*.
 
 
+.Ergebnis
 Das Repository ist getrennt. Im Abschnitt * Docker Image Repository* sollte der Status „nicht verbunden“ angezeigt werden.
 
 
@@ -69,6 +71,7 @@ Ein Artefakt-Repository kann mit Host-Artefakten wie Binärdateien verbunden wer
 . Wählen Sie *Verbinden*.
 
 
+.Ergebnis
 Das Repository ist verbunden. Im Abschnitt *Artefakt-Repository* sollte im Repository ein verbundener Status angezeigt werden.
 
 
@@ -85,6 +88,7 @@ Sie können die Verbindung zu einem Artefakt-Repository entfernen, wenn es nicht
 . Wählen Sie *Ja, trennen Sie das Artefakt-Repository*.
 
 
+.Ergebnis
 Das Repository ist getrennt. Im Abschnitt *Artefakt-Repository* sollte im Repository ein verbundener Status angezeigt werden.
 
 [discrete]

@@ -13,7 +13,7 @@ summary: 'Sie können ein von einer Zertifizierungsstelle eines Drittanbieters s
 
 Sie können das vorhandene selbst signierte TLS-Zertifikat entfernen und durch ein TLS-Zertifikat ersetzen, das von einer Zertifizierungsstelle (CA) signiert ist.
 
-.Was Sie und#8217;ll benötigen
+.Was Sie benötigen
 * Kubernetes-Cluster mit installiertem Astra Control Center
 * Administratorzugriff auf eine Command Shell auf dem zu ausgeführten Cluster `kubectl` Befehle
 * Private Schlüssel- und Zertifikatdateien aus der CA

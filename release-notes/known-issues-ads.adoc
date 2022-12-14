@@ -28,6 +28,7 @@ Details wie Kapazität und Durchsatz werden nicht in der UI angezeigt. Wenn dies
 Wenn Sie einem Astra Control Center-Cluster einen Cluster mit Astra Data Store hinzugefügt haben, wird die astrads-System-App standardmäßig als versteckte Anwendung verwaltet. Um das Cluster zu verwalten, müssen Sie zuerst die Astrads-System-App rückgängig machen. Die Verwaltung dieser App kann mit der Astra Control Center-Benutzeroberfläche nicht aufgehoben werden. Verwenden Sie stattdessen eine Astra Control API-Anfrage, um die App manuell zu entfernen:
 
 .Details
+[%collapsible]
 ====
 .Schritte
 . Holen Sie sich die ID für den verwalteten Cluster mithilfe dieser API:

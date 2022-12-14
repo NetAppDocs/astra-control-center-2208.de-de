@@ -218,7 +218,6 @@
   <block id="4b82d2ba916f71f80b166a691297f031" category="summary">Sie können ein von einer Zertifizierungsstelle eines Drittanbieters signiertes TLS-Zertifikat (CA) hochladen und überprüfen, um das selbstsignierte Astra Control Center-Zertifikat zu ersetzen.</block>
   <block id="c1da0c460c22d6fba67aca5373a43cb1" category="doc">Fügen Sie ein benutzerdefiniertes TLS-Zertifikat hinzu</block>
   <block id="b6822b6a69873b5cfd266e0a2d8d2a77" category="paragraph">Sie können das vorhandene selbst signierte TLS-Zertifikat entfernen und durch ein TLS-Zertifikat ersetzen, das von einer Zertifizierungsstelle (CA) signiert ist.</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">Was Sie und#8217;ll benötigen</block>
   <block id="70f4c838af25e53e799ffca0c2ea44f5" category="list-text">Kubernetes-Cluster mit installiertem Astra Control Center</block>
   <block id="0cb21c23cf46c4ea4707d50d3d396f43" category="list-text">Administratorzugriff auf eine Command Shell auf dem zu ausgeführten Cluster<block ref="0f12ee5c9f1dd90158580f1c292b0d37" prefix=" " category="inline-code"></block> Befehle</block>
   <block id="599cad6552be336cbc11ad6b88a69f35" category="list-text">Private Schlüssel- und Zertifikatdateien aus der CA</block>
@@ -418,7 +417,6 @@
   <block id="009673abdb70c0ffd1710edeb60d8cd2" category="cell">Kommunikation zwischen NetApp AutoSupport</block>
   <block id="f370975993dbb1e7c1e24af01ed7986c" category="section-title">Unterstützte Webbrowser</block>
   <block id="5ee52824555f7e54b800612663b9f098" category="paragraph">Astra Control Center unterstützt aktuelle Versionen von Firefox, Safari und Chrome mit einer Mindestauflösung von 1280 x 720.</block>
-  <block id="0a20c90d5270bed19fcaf851778c663b" category="section-title">Was kommt als Nächstes</block>
   <block id="159b2efa467f3d1f53e7c16668353bf5" category="inline-link-macro">Schnellstart</block>
   <block id="77a7c94739d3e3b6a3c106162739bbcd" category="paragraph">Sehen Sie sich die an <block ref="4a78f9b7a1530228ea4c970be46c5b94" category="inline-link-macro-rx"></block> Überblick.</block>
   <block id="efb8331a92b47dc173e5cbcd8ae1a87b" category="summary">Nach der Installation von Astra Control Center, melden Sie sich in der UI an und ändern Sie Ihr Passwort, Sie möchten eine Lizenz einrichten, Cluster hinzufügen, Speicher verwalten und Buckets hinzufügen.</block>
@@ -471,11 +469,9 @@
   <block id="b7d863d6846eaf1689410c02279f9ea6" category="section-title">Fügen Sie ein Storage-Back-End hinzu</block>
   <block id="07bb61072986729e824079c9eb528582" category="paragraph">Sie können ein Storage-Backend hinzufügen, sodass Astra Control die Ressourcen managen kann. Sie können ein Storage-Back-End auf einem gemanagten Cluster implementieren oder ein vorhandenes Storage-Back-End verwenden.</block>
   <block id="eb33ac2274505b5f55f336ecd9e9a2d2" category="paragraph">Durch das Management von Storage-Clustern in Astra Control als Storage-Backend können Sie Verbindungen zwischen persistenten Volumes (PVS) und dem Storage-Backend sowie zusätzliche Storage-Kennzahlen abrufen.</block>
-  <block id="f8f5539f53262607b5f2bff0f2048a87" category="list-title">Was Sie&amp;#8217;ll Bedarf an vorhandenen Astra Data Store-Bereitstellungen</block>
   <block id="bbcdee2c81617430cf13df9d72e93bd4" category="list-text">Sie haben Ihren Kubernetes-App-Cluster und das zugrunde liegende Computing-Cluster hinzugefügt.</block>
   <block id="129d92c88545c014f5981e4bedd69fd4" category="inline-link-macro">Fügen Sie den Cluster hinzu</block>
   <block id="dc03b544598d0dfcfdee0b1fce2a4730" category="admonition">Nachdem Sie Ihren Kubernetes App-Cluster für Astra Data Store hinzugefügt haben und er durch Astra Control gemanagt wird, erscheint der Cluster wie<block ref="a4078d5d3c7b4099b0e6e6cc3ac7d2cd" prefix=" " category="inline-code"></block> In der Liste der entdeckten Back-Ends. Als Nächstes müssen Sie das Computing-Cluster hinzufügen, das Astra Data Store enthält und das Kubernetes App-Cluster untermauert. Dies können Sie über *Backends* in der UI tun. Wählen Sie das Menü Aktionen für den Cluster aus<block ref="34e34c43ec6b943c10a3cc1a1a16fb11" prefix=" " category="inline-code"></block>, und <block ref="8c30ee7267ee6c93cf0c195b661c2cd2" category="inline-link-macro-rx"></block>. Nach dem Status des Clusters von<block ref="a4078d5d3c7b4099b0e6e6cc3ac7d2cd" prefix=" " category="inline-code"></block> Änderungen am Namen des Kubernetes-Clusters können Sie mit dem Hinzufügen eines Backend fortfahren.</block>
-  <block id="5f8f1c10343756cee5ac9c33e098132e" category="list-title">Was Sie&amp;#8217;ll benötigen für neue Astra Data Store-Bereitstellungen</block>
   <block id="e149dd131ab58984f98a85e4acdc17f3" category="inline-link-macro">Die Version des Installationspakets, das Sie bereitstellen möchten, hochgeladen haben</block>
   <block id="371c46463ca3b465cd0a0b198363c17f" category="list-text">Das ist schon <block ref="ce9e25f6db2a9b698807ac8ac2ea2d16" category="inline-link-macro-rx"></block> Zu einem Ort, der für Astra Control zugänglich ist.</block>
   <block id="562a8ee2a8f15700012f29228a3198c7" category="list-text">Sie haben den Kubernetes-Cluster hinzugefügt, den Sie für die Implementierung verwenden möchten.</block>
@@ -569,7 +565,6 @@
   <block id="a57d95e33fbdffe3b4bd71d5b0be74cd" category="list-text">Wählen Sie die Kategorie *Speicherklassen* aus.</block>
   <block id="b76660fac98aeb4fc46b77e989e6d8b0" category="list-text">Wählen Sie das Menü *Aktionen* für die Speicherklasse aus, die Sie als Standard festlegen möchten.</block>
   <block id="b4789b0ec041cd5e51f32c2f901a0951" category="list-text">Wählen Sie *als Standard*.</block>
-  <block id="3f297ef15cde0668e93b35f2752fd4fd" category="section-title">Was kommt als Nächstes?</block>
   <block id="f5c61eabb41590a473fa2d0d115e63c1" category="paragraph">Nachdem Sie sich angemeldet haben und Cluster zum Astra Control Center hinzugefügt haben, können Sie die Anwendungsdatenmanagement-Funktionen von Astra Control Center nutzen.</block>
   <block id="1b4fcfaacbd0ae3e24bc82f8d7a82211" category="inline-link-macro">Benutzer managen</block>
   <block id="a2ef00bfa82a9800d86855a4a32ccef6" category="list-text"><block ref="a2ef00bfa82a9800d86855a4a32ccef6" category="inline-link-macro-rx"></block></block>
@@ -750,7 +745,6 @@
   <block id="7b07707c591c0c1d685106f821b042b1" category="paragraph">Applikationen lassen sich in Distributionen mit selbst gemanagten Kubernetes-Clustern managen, wie z. B. mit OpenShift Container Platform (OCP). Nur selbst gemanagte OCP Cluster sind für die Implementierung des Astra Control Center validiert.</block>
   <block id="5f70f12e51733f39df8a8d8f2f0742da" category="section-title">Implementieren Sie Astra Control Center in Amazon Web Services</block>
   <block id="b4504a5af800e56b2ac7bc310c520499" category="paragraph">Astra Control Center lässt sich in einem selbst gemanagten Kubernetes-Cluster implementieren, der in einer Public Cloud von Amazon Web Services (AWS) gehostet wird.</block>
-  <block id="4ad0f595b9dbd4c0336e372a8a1b2410" category="section-title">Was Sie für AWS benötigen</block>
   <block id="a5a36964a87d94d5ac0851af923c64fc" category="paragraph">Vor der Implementierung von Astra Control Center in AWS sind folgende Fragen zu beachten:</block>
   <block id="e7e1ddd48b888f0547b40d916ec5553d" category="inline-link-macro">Lizenzierungsanforderungen für Astra Control Center</block>
   <block id="b488bebfd7a3a01cdcc54ea5856291cb" category="list-text">Astra Control Center-Lizenz: Siehe <block ref="fc4957629b78fc8c58b84966810cc78b" category="inline-link-macro-rx"></block>.</block>
@@ -842,7 +836,6 @@
   <block id="4fa3cb64c7a4d0ea493cd71172a39adf" category="admonition">AWS verwendet den Bucket-Typ generischer S3.</block>
   <block id="1e1383512a183b22a38cf414944a5e6f" category="section-title">Implementieren Sie Astra Control Center in der Google Cloud Platform</block>
   <block id="b22e8d7dd55c8decf5f9ba74419121b1" category="paragraph">Astra Control Center lässt sich in einem selbst gemanagten Kubernetes-Cluster implementieren, der auf einer Google Cloud Platform (GCP) Public Cloud gehostet wird.</block>
-  <block id="03bf87a4447c098a7f465eb8095fc070" category="section-title">Was Sie für GCP benötigen</block>
   <block id="643d752df6c3694f3ce7af63534415ce" category="paragraph">Vor der Implementierung von Astra Control Center in GCP sind folgende Elemente erforderlich:</block>
   <block id="f5c6148230da18b53bb888b7c50f6394" category="list-text">Bei Verwendung von OCP, Red hat OpenShift Container Platform (OCP) 4.10</block>
   <block id="053fe1b94d4c8c543d8ea27c9283521c" category="list-text">GCP-Servicekonto mit Berechtigungen, mit denen Sie Buckets und Konnektoren erstellen können</block>
@@ -902,7 +895,6 @@
   <block id="9e7e41f010f82585ef3b0ebd3f1de902" category="list-text">Generieren Sie das Docker Secret, um Bilder für die Astra Control Center-Installation zu übertragen:</block>
   <block id="4d9093ca668edda8a4b7f1d5efe8d4bd" category="section-title">Implementieren Sie Astra Control Center in Microsoft Azure</block>
   <block id="7f18f262f0f4112be8239133aa15cff4" category="paragraph">Astra Control Center lässt sich in einem selbst gemanagten Kubernetes-Cluster implementieren, der in einer Microsoft Azure Public Cloud gehostet wird.</block>
-  <block id="24fdd2eaa17fe7802a949abb767e47ff" category="section-title">Was Sie für Azure benötigen</block>
   <block id="0868fde25a786c798cfe63227a2e632c" category="paragraph">Vor der Implementierung von Astra Control Center in Azure sind folgende Fragen erforderlich:</block>
   <block id="06e1b0116459bf681b32b65360e38671" category="list-text">Bei Verwendung von OCP, Red hat OpenShift Container Platform (OCP) 4.8</block>
   <block id="067c001dbf7480cc26099ff0edfb8bda" category="list-text">Azure Zugangsdaten mit Berechtigungen, mit denen Sie Buckets und Konnektoren erstellen können</block>
@@ -1107,12 +1099,10 @@
   <block id="15dd8f83e9a999edc6eae56c5aec726e" category="paragraph">Diese Seite bietet einen Überblick über die Schritte, die für den Einstieg in das Astra Control Center erforderlich sind. Die Links in den einzelnen Schritten führen zu einer Seite, die weitere Details enthält.</block>
   <block id="b777e6ba4555d404b00c2436d03ae649" category="inline-link-macro">Lizenzierungsinformationen</block>
   <block id="dc9e569caa79effd430c7ea63ceff7be" category="paragraph">Probieren Sie es aus! Wenn Sie Astra Control Center ausprobieren möchten, können Sie eine 90-Tage-Evaluierungslizenz verwenden. Siehe <block ref="3d35b4f40b39e7d8200f90f9d624f8f4" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
-  <block id="4854d4c0301c6f34c76f1cb78057e09e" category="list-title">&lt;span class=„image“&gt;&lt;img src=<block ref="0c3becc25d95e48b9ca863002a042824" category="inline-link-rx"></block> alt=„One“&gt;&lt;/span&gt; Kubernetes-Cluster-Anforderungen prüfen</block>
   <block id="89110f39cddf501c149d691e3219c46f" category="list-text">Astra arbeitet mit Kubernetes-Clustern mit einem in Trident konfigurierten ONTAP-Storage-Back-End oder einem Astra Data Store Storage-Backend.</block>
   <block id="0deb5023224ed4d71135e9bae6dff9d4" category="list-text">Cluster müssen in einem ordnungsgemäßen Zustand mit mindestens drei Online-Worker-Nodes ausgeführt werden.</block>
   <block id="5f08198ddd920cae8e4af705793b2a56" category="list-text">Der Cluster muss Kubernetes ausführen.</block>
   <block id="3eb8247119e86301f694edfa85ee565f" category="paragraph">Erfahren Sie mehr über das <block ref="a41c664e3d2520e4c4deb907d0286272" category="inline-link-macro-rx"></block>.</block>
-  <block id="9384595b10ef347b2da67882c7b37bd7" category="list-title">&lt;span class=„image“&gt;&lt;img src=<block ref="c9bdd0fd7d7224adcf67691b15f15281" category="inline-link-rx"></block> alt=„zwei“&gt;&lt;/span&gt; Astra Control Center herunterladen und installieren</block>
   <block id="afdff0e68ce5b4b3109d398df16872f7" category="inline-link">NetApp Support Site Astra Control Center Download-Seite</block>
   <block id="b6511e86f155fe09cdd3bb8e739ea6b5" category="list-text">Laden Sie das Astra Control Center von der herunter<block ref="287561c5277beeaf3b39a65b237114c8" category="inline-link-rx"></block>.</block>
   <block id="276a11727deff1a1f5ebf349b23835fc" category="list-text">Installieren Sie Astra Control Center in Ihrer lokalen Umgebung.</block>
@@ -1120,7 +1110,6 @@
   <block id="9ae09076555ee5ddfe5af03ebf44bcf3" category="paragraph">Optional kann Astra Control Center mit einem Cloud Volumes ONTAP Storage-Backend installiert werden.</block>
   <block id="d0945e630f33dd0475cc6b38cb528ffb" category="inline-link-macro">Installieren des Astra Control Center</block>
   <block id="407e54fcf5cadabd365673d315aa5d2c" category="paragraph">Weitere Informationen zu <block ref="a4c65d6b325e0b0dbae534b5bb678d6c" category="inline-link-macro-rx"></block>.</block>
-  <block id="80de081c75779cda8e2db1de0f292684" category="list-title">&lt;span class=„image“&gt;&lt;img src=<block ref="ddd753dc2858fe3a5582f20b300a0541" category="inline-link-rx"></block> alt=„drei“&gt;&lt;/span&gt; Abschließen einiger Aufgaben für die Ersteinrichtung</block>
   <block id="99bebad9572c9b2d89ca66465539d959" category="list-text">Fügen Sie eine Astra Control-Lizenz und alle unterstützenden ONTAP-Lizenzen hinzu.</block>
   <block id="89a40ca78d4ff20ec6d54ba006768895" category="list-text">Ein Kubernetes Cluster hinzufügen und Astra Control Center erkennt Details.</block>
   <block id="87d2ee45afe04a74320927b3cc97c4ef" category="list-text">Fügen Sie ein ONTAP-Storage-Back-End hinzu.</block>
@@ -1164,7 +1153,6 @@
   <block id="a9a11c7d000cd067981f61a0db579f74" category="summary">Sie sollten die elgibility Checks durchführen, um sicherzustellen, dass der Cluster zum Astra Control Center hinzugefügt werden kann.</block>
   <block id="0ab8b406c4d5e3b8a7e5b402912b73fc" category="doc">Voraussetzungen für das Hinzufügen eines Clusters</block>
   <block id="84fccda9e18ab736ae1e33ef33ff8543" category="paragraph">Sie sollten sicherstellen, dass die Voraussetzungen erfüllt sind, bevor Sie ein Cluster hinzufügen. Außerdem sollten Sie die Eignungskontrollen durchführen, um sicherzustellen, dass Ihr Cluster zum Astra Control Center hinzugefügt werden kann.</block>
-  <block id="32ce911ba9da44dfbcba79bbe607d8f0" category="section-title">Was Sie benötigen, bevor Sie ein Cluster hinzufügen</block>
   <block id="c537fd6227e3e02b92ddc570bb16171d" category="paragraph">Vergewissern Sie sich, dass Ihr Cluster die in aufgeführten Anforderungen erfüllt <block ref="303f4f914eaab451cb7f742d3c871e5f" category="inline-link-macro-rx"></block>.</block>
   <block id="cbde2df6a7c89370edc449dc5705d30c" category="inline-link">Anweisungen</block>
   <block id="b5a54438cd4ef372398ebc0939def4bb" category="admonition">Wenn Sie planen, als verwaltete Computing-Ressource einen zweiten OpenShift 4.6, 4.7 oder 4.8 hinzuzufügen, sollten Sie sicherstellen, dass die Astra Trident Volume Snapshot-Funktion aktiviert ist. Sehen Sie den offiziellen Astra Trident an<block ref="8b7ff4f9e99396172438cb6668056409" category="inline-link-rx"></block> Um Volume Snapshots mit Astra Trident zu aktivieren und zu testen.</block>
@@ -1809,14 +1797,12 @@
   <block id="a11ca2c2dd5144bf630dd5eb29b7cc67" category="list-text">Geben Sie ein Passwort ein, das den Anforderungen des Passworts entspricht.</block>
   <block id="57d4c802b66507e7e8b66d11f3a59a6f" category="list-text">Geben Sie das Kennwort zur Bestätigung erneut ein.</block>
   <block id="45e3b3a50e0542121cdf2766502b7b56" category="list-text">Wählen Sie *Passwort ändern*.</block>
-  <block id="90f1c6fc655d106b5040673f4fce5f99" category="section-title">Kennwort eines anderen Benutzers zurücksetzen</block>
   <block id="777944860c5bbcdb1b4a4a0a593efb52" category="paragraph">Wenn Ihr Konto über Berechtigungen für die Administrator- oder Eigentümerrolle verfügt, können Sie Passwörter für andere Benutzerkonten sowie für Ihre eigenen zurücksetzen. Wenn Sie ein Kennwort zurücksetzen, weisen Sie ein temporäres Kennwort zu, das der Benutzer bei der Anmeldung ändern muss.</block>
   <block id="db30d3c2fee806f0319b663d27edf75c" category="list-text">Wählen Sie die Dropdown-Liste *Aktionen* aus.</block>
   <block id="df429da64d721747277606b598df29c4" category="list-text">Wählen Sie *Passwort Zurücksetzen*.</block>
   <block id="67873c21262ba112b2e21148d43428f5" category="list-text">Geben Sie ein temporäres Kennwort ein, das den Anforderungen des Passworts entspricht.</block>
   <block id="7ba107a1d1f1a8008563386e4edebd3d" category="admonition">Wenn sich der Benutzer beim nächsten Mal anmeldet, wird er aufgefordert, das Passwort zu ändern.</block>
   <block id="3930015dcc2810869591e35a2b5d714b" category="list-text">Wählen Sie *Passwort zurücksetzen*.</block>
-  <block id="a3f6d57c07e3d951867e570c6f3e5028" category="section-title">Ändern Sie die Rolle eines Benutzers</block>
   <block id="24c0d48852d7cd070e2d6f992f4c74ab" category="paragraph">Benutzer mit der Rolle „Eigentümer“ können die Rolle aller Benutzer ändern, während Benutzer mit der Administratorrolle die Rolle von Benutzern ändern können, die die Rolle „Administrator“, „Mitglied“ oder „Viewer“ haben.</block>
   <block id="8b950be10553ca14d8752cc7cbea7834" category="list-text">Wählen Sie *Rolle bearbeiten*.</block>
   <block id="697f40aaae8b73ccaa173cd46b34fbd2" category="list-text">Wählen Sie eine neue Rolle aus.</block>
@@ -2587,18 +2573,13 @@
   <block id="78ce739c69215b7a8b54179394eea168" category="paragraph">Darüber hinaus können Sie Applikationen zur Vorbereitung auf das Disaster Recovery auf ein Remote-Cluster replizieren.</block>
   <block id="fe2011653552de71bf2a04defdef5e3d" category="section-title">Workflow für Applikationssicherung</block>
   <block id="9e3e52a15539d6b76c9af7b7c901f2dc" category="paragraph">Anhand des folgenden Beispielworkflows können Sie Ihre Apps schützen.</block>
-  <block id="22d2c2bc5f801a701ddbdef1d19abcb3" category="section-title">Sicherung aller Applikationen</block>
   <block id="cdb972c8ec0f0d2d064eee29da832b09" category="inline-link-macro">Erstellen Sie ein manuelles Backup aller Apps</block>
   <block id="bb9745866a03e99751c67559a4b5bbfc" category="paragraph">Um sicherzustellen, dass Ihre Apps sofort geschützt sind, <block ref="153c1de46633dd7b9ee4197b0f57d4e6" category="inline-link-macro-rx"></block>.</block>
-  <block id="fc728311492264f387b6d56bf7f401d9" category="section-title">Konfigurieren Sie für jede Applikation eine Sicherungsrichtlinie</block>
   <block id="67d8aac0ef877e89b323dda77c01cdc7" category="inline-link-macro">Konfigurieren Sie für jede Applikation eine Sicherungsrichtlinie</block>
   <block id="a6f3f1cac5047bfc8c8a549d7555afb4" category="paragraph">Zur Automatisierung zukünftiger Backups und Snapshots <block ref="be33481d5db8c6459d2a9f9986e47ba8" category="inline-link-macro-rx"></block>. Sie können beispielsweise mit wöchentlichen Backups und täglichen Snapshots beginnen und jeweils mit einer Monatsaufbewahrung beginnen. Für manuelle Backups und Snapshots wird dringend die Automatisierung von Backups und Snapshots mit einer Schutzrichtlinie empfohlen.</block>
-  <block id="44c76d6a0a4f1bde94eb2cd76b8d4eae" category="section-title">Passen Sie die Sicherungsrichtlinien an</block>
   <block id="2afcb2016ee556b04a072d6535bbab55" category="paragraph">Wenn Applikationen und ihre Nutzungsmuster sich ändern, passen Sie die Sicherungsrichtlinien nach Bedarf an, um einen bestmöglichen Schutz zu gewährleisten.</block>
-  <block id="e0a9a1ca749b026f1191e8980cfd9475" category="section-title">Replizieren von Applikationen in einem Remote-Cluster</block>
   <block id="87c77d08f8cc9ba015bc277bf63171ec" category="inline-link-macro">Replizierung von Applikationen</block>
   <block id="ed78458df917d6da9f19cca23d8468cd" category="paragraph"><block ref="c229e392652cddf73148e5c65f706c6d" category="inline-link-macro-rx"></block> Zu einem Remote-Cluster mit NetApp SnapMirror Technologie Astra Control repliziert Snapshots in einen Remote-Cluster und bietet damit asynchrone Disaster Recovery-Funktion.</block>
-  <block id="c4491e86699f3e74488527dd9f36c879" category="section-title">Stellen Sie im Notfall Ihre Applikationen mit dem neuesten Backup oder der neuesten Replizierung auf ein Remote-System wieder her</block>
   <block id="7ce9ebbb5de6892ca270cea878bd99d1" category="inline-link-macro">Wiederherstellung des aktuellen Backups</block>
   <block id="e11f531afbfddcb2e626779912560475" category="paragraph">Im Falle eines Datenverlustes sind Recoverys bis möglich <block ref="550aec8aa1d184571b143fbb368e4c54" category="inline-link-macro-rx"></block> Zuerst für jede Anwendung. Sie können dann den letzten Snapshot wiederherstellen (falls verfügbar). Sie können die Replikation zu einem Remote-System verwenden.</block>
   <block id="c8bc2d4843a862e6c92deaec60873d67" category="summary">Hier wird beschrieben, wie Sie das Astra Control Center und den Astra Control Center Operator entfernen.</block>
@@ -2708,4 +2689,32 @@
   <block id="1eda8b1f4dfa35b119f2a579170d4546" category="sidebar">Anmeldeinformationen verwalten</block>
   <block id="0adc618a9ad28f57db9328d47cf45165" category="sidebar">Infrastruktur mit Cloud Insights und Fluentd überwachen</block>
   <block id="f28aaf8670a5d0a4f80f0bf5fccb4b1c" category="sidebar">Einführung in Astra</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="section-title">Wie es weiter geht</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">Was Sie benötigen</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Eins</block>
+  <block id="13a0d74de4f994f2861da351c22e5549" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Kubernetes-Cluster-Anforderungen prüfen</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Zwei</block>
+  <block id="6e6d8bfff1b16149f8c62cfee0d2f62e" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Laden Sie Astra Control Center herunter und installieren Sie es</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Drittens</block>
+  <block id="ba9e9d1eb144bbf0eb66ffe3fb01e03a" category="list-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Führen Sie einige erste Setup-Aufgaben aus</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Vier</block>
+  <block id="9824425bd5418e5e140ee6b8561b8914" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Nutzen Sie Das Astra Control Center</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">Fünf</block>
+  <block id="4e661ed0899ae91f577701320636fabf" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Fahren Sie mit dieser Schnellstartanleitung fort</block>
+  <block id="190b1d4301402be73ef9a56adefaf47b" category="section-title">Was benötigen Sie vor dem Hinzufügen eines Clusters</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="section-title">Was kommt als Nächstes?</block>
+  <block id="9ecb27bf50e09cec4cda2e18d84ea4da" category="list-title">Was Sie für bestehende Implementierungen von Astra Data Store benötigen</block>
+  <block id="75098be5cdce8831c807233c237587a4" category="list-title">Was Sie für die neuen Astra Data Store Implementierungen benötigen</block>
+  <block id="9905787058ed1f891f5110340336c6f4" category="section-title">Was Sie für AWS benötigen</block>
+  <block id="60f26f17249a512292a5fb57e3431dea" category="section-title">Was wird für GCP benötigt</block>
+  <block id="e4f3253ab12e0c60faa03ce6ef1c9784" category="section-title">Was Sie für Azure benötigen</block>
+  <block id="cfe9e43a4e29105f9f24bd0ed639721b" category="paragraph-title">Allgemein (Standard)</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Bevor Sie beginnen</block>
+  <block id="d94e29dda4626ec2be6ac4f06224f6cf" category="section-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Sicherung aller Applikationen</block>
+  <block id="596a8ca466f62d03c2dfc376a65cac71" category="section-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Konfigurieren Sie für jede Applikation eine Sicherungsrichtlinie</block>
+  <block id="db0ae7eb707500904a523f5186eb92f0" category="section-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Passen Sie die Sicherungsrichtlinien an</block>
+  <block id="e954bf1cb1b54437e70f5d5704a01657" category="section-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Replizieren von Applikationen in einem Remote-Cluster</block>
+  <block id="8ab08c3e81a1ee43c6b03a22403291db" category="section-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Stellen Sie im Notfall Ihre Applikationen mit dem neuesten Backup oder der neuesten Replizierung auf ein Remote-System wieder her</block>
+  <block id="53c5fac0ba78b08ca3f0a270b746c5d2" category="section-title">Kennwort eines anderen Benutzers zurücksetzen</block>
+  <block id="edb74efc05972c268b6cccf83996ac3e" category="section-title">Ändern Sie die Rolle eines Benutzers</block>
 </blocks>

@@ -31,6 +31,7 @@ Sie müssen nicht mehr Apps managen, die Sie nicht mehr Backups, Snapshots oder 
 . Bestätigen Sie, dass Sie die Verwaltung der Apps aufheben möchten, und wählen Sie dann *Ja, Anwendung verwalten* aus.
 
 
+.Ergebnis
 Astra Control Center beendet die Verwaltung der App.
 
 
@@ -53,6 +54,7 @@ NOTE: Bevor Sie das Management des Clusters aufheben, sollten Sie die dem Cluste
 . Bestätigen Sie, dass Sie die Verwaltung des Clusters aufheben möchten und wählen Sie dann *Ja, Cluster verwalten* aus.
 
 
+.Ergebnis
 Der Status des Clusters ändert sich in *removing* und danach wird der Cluster von der Seite *Clusters* entfernt und wird nicht mehr von Astra Control Center verwaltet.
 
 

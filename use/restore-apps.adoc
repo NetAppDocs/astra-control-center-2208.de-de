@@ -46,6 +46,7 @@ NOTE: Wenn Sie in einem zuvor gelöschten Namespace wiederherstellen, wird im Ra
 . *Zusammenfassung wiederherstellen*: Überprüfen Sie die Details über die Wiederherstellungsaktion, geben Sie "wiederherstellen" ein und wählen Sie *Wiederherstellen*.
 
 
+.Ergebnis
 Astra Control Center stellt die App basierend auf den von Ihnen bereitgestellten Informationen wieder her. Wenn Sie die Applikation bereits wiederhergestellt haben, werden die Inhalte vorhandener persistenter Volumes durch den Inhalt persistenter Volumes aus der wiederhergestellten App ersetzt.
 
 
