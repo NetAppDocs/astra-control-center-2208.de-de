@@ -1404,7 +1404,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-22 16:16:15 +0000">11/22/2022</time>
+    <time datetime="2022-12-14 18:35:31 +0000">12/14/2022</time>
     
   
 
@@ -1498,7 +1498,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zeichenfolge</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Erforderlich</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Skalierungsoptionen für die Ressourcengrenzen von AstraControlCenter. Siehe  combinations and incompatibilities,Komplexität ist Um zu verstehen, wie sich diese Einstellungen auf andere Einstellungen auswirken.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skalierungsoptionen für die Ressourcengrenzen von AstraControlCenter. Siehe <a href="#konfigurationskombinationen-und-inkompatibilitäten">Komplexität ist</a> Um zu verstehen, wie sich diese Einstellungen auf andere Einstellungen auswirken.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">AstraKubeConfigSecret</p></td>
@@ -1512,7 +1512,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zeichenfolge</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Allgemein (dies ist der Standardwert)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Der Typ des Ingress Astra Control Centers sollte für konfiguriert werden. Gültige Werte sind <code>Generic</code> Und <code>AccTraefik</code>. Siehe  combinations and incompatibilities,Komplexität ist Um zu verstehen, wie sich diese Einstellungen auf andere Einstellungen auswirken.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Der Typ des Ingress Astra Control Centers sollte für konfiguriert werden. Gültige Werte sind <code>Generic</code> Und <code>AccTraefik</code>. Siehe <a href="#konfigurationskombinationen-und-inkompatibilitäten">Komplexität ist</a> Um zu verstehen, wie sich diese Einstellungen auf andere Einstellungen auswirken.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">AvpDeploy</p></td>
@@ -1596,7 +1596,7 @@
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optionen, wie Astra Control Center Service implementieren soll, um MTLS im Cluster zu warten. Siehe  combinations and incompatibilities,Komplexität ist Um zu verstehen, wie sich diese Einstellungen auf andere Einstellungen auswirken</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optionen, wie Astra Control Center Service implementieren soll, um MTLS im Cluster zu warten. Siehe <a href="#konfigurationskombinationen-und-inkompatibilitäten">Komplexität ist</a> Um zu verstehen, wie sich diese Einstellungen auf andere Einstellungen auswirken</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">mtls.aktiviert</p></td>
@@ -1647,6 +1647,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Allgemein (Standard)</div>
 <p>Wenn <code>ingressType</code> Ist auf festgelegt `Generic`Astra Control installiert keine Ingress-Ressourcen. Es wird angenommen, dass der Benutzer für die Sicherung und Weiterleitung des Datenverkehrs über sein Netzwerk an Applikationen arbeitet, die auf Kubernetes-Clustern ausgeführt werden. Dabei sollen dieselben Mechanismen genutzt werden. Wenn der Benutzer einen Ingress erzeugt, um den Datenverkehr zum Astra Control zu leiten, muss der Ingress auf den internen Schleppdienst am Port 80 zeigen. Hier ist ein Beispiel für eine Nginx-Ingress-Ressource, die mit der Einstellung Generic ingressType arbeitet.</p>
 </div>
 <div class="listingblock">
@@ -1688,6 +1689,7 @@ Wenn MTLS mit der Einstellung mtls.Enabled im CR deaktiviert ist, müssen Sie di
 </table>
 </div>
 <div class="paragraph">
+<div class="title">AccTraefik</div>
 <p>Wenn <code>ingressType</code> Ist auf festgelegt <code>AccTraefik</code>, Astra Control Center implementiert sein Trafik Gateway als Kubernetes Load Balancer-Service. Benutzer müssen einen externen Load Balancer (wie MetalLB) für Astra Control Center bereitstellen, um eine externe IP zu erhalten.</p>
 </div>
 </div>

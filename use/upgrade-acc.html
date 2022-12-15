@@ -1404,7 +1404,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-22 16:16:15 +0000">11/22/2022</time>
+    <time datetime="2022-12-14 18:35:31 +0000">12/14/2022</time>
     
   
 
@@ -1420,7 +1420,7 @@
 <p>Laden Sie zum Upgrade des Astra Control Center das Installationspaket von der NetApp Support Site herunter und führen Sie diese Anweisungen aus, um die Komponenten des Astra Control Center in Ihrer Umgebung zu aktualisieren. Mit diesem Verfahren können Sie das Astra Control Center in internetverbundenen oder luftgekapderten Umgebungen aktualisieren.</p>
 </div>
 <div class="ulist">
-<div class="title">Was Sie und#8217;ll benötigen</div>
+<div class="title">Was Sie benötigen</div>
 <ul>
 <li>
 <p><a href="../get-started/requirements.html">"Bevor Sie mit dem Upgrade beginnen, stellen Sie sicher, dass Ihre Umgebung auch die Mindestanforderungen für die Implementierung des Astra Control Center erfüllt"</a>.</p>
@@ -1447,33 +1447,34 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Der Astra Control Center Upgrade-Prozess führt Sie durch die folgenden grundlegenden Schritte:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>the Astra Control Center bundle</p>
+<p><a href="#laden-sie-das-astra-control-center-bundle-herunter">Laden Sie das Astra Control Center Bundle herunter</a></p>
 </li>
 <li>
-<p>the bundle and change directory</p>
+<p><a href="#packen-sie-das-paket-aus-und-ändern-sie-das-verzeichnis">Packen Sie das Paket aus und ändern Sie das Verzeichnis</a></p>
 </li>
 <li>
-<p>the images to your local registry</p>
+<p><a href="#fügen-sie-die-bilder-ihrer-lokalen-registrierung-hinzu">Fügen Sie die Bilder Ihrer lokalen Registrierung hinzu</a></p>
 </li>
 <li>
-<p>the updated Astra Control Center operator</p>
+<p><a href="#installieren-sie-den-aktualisierten-astra-control-center-operator">Installieren Sie den aktualisierten Astra Control Center-Operator</a></p>
 </li>
 <li>
-<p>Astra Control Center</p>
+<p><a href="#upgrade-astra-control-center">Upgrade Astra Control Center</a></p>
 </li>
 <li>
-<p>third-party services (Optional)</p>
+<p><a href="#upgrade-von-services-von-drittanbietern-optional">Upgrade von Services von Drittanbietern (optional)</a></p>
 </li>
 <li>
-<p>system status</p>
+<p><a href="#überprüfen-sie-den-systemstatus">Überprüfen Sie den Systemstatus</a></p>
 </li>
 <li>
-<p>up ingress for load balancing</p>
+<p><a href="#eindringen-für-den-lastenausgleich-einrichten">Eindringen für den Lastenausgleich einrichten</a></p>
 </li>
 </ul>
 </div>
@@ -1688,10 +1689,10 @@ done</code></pre>
 </div>
 </li>
 <li>
-<p>Ändern <code>[your_registry_path]</code> Für das <code>kube-rbac-proxy</code> Bild zum Registrierungspfad, in dem Sie die Bilder in ein geschoben haben ,Vorheriger Schritt.</p>
+<p>Ändern <code>[your_registry_path]</code> Für das <code>kube-rbac-proxy</code> Bild zum Registrierungspfad, in dem Sie die Bilder in ein geschoben haben <a href="#substep_image_local_registry_push">Vorheriger Schritt</a>.</p>
 </li>
 <li>
-<p>Ändern <code>[your_registry_path]</code> Für das <code>acc-operator-controller-manager</code> Bild zum Registrierungspfad, in dem Sie die Bilder in ein geschoben haben ,Vorheriger Schritt.</p>
+<p>Ändern <code>[your_registry_path]</code> Für das <code>acc-operator-controller-manager</code> Bild zum Registrierungspfad, in dem Sie die Bilder in ein geschoben haben <a href="#substep_image_local_registry_push">Vorheriger Schritt</a>.</p>
 </li>
 <li>
 <p>Fügen Sie dem die folgenden Werte hinzu <code>env</code> Abschnitt:</p>
@@ -1809,7 +1810,7 @@ deployment.apps/acc-operator-controller-manager configured</pre>
 <img src="/us-en/astra-control-center-2208/images/note.svg" alt="Anmerkung">
 </td>
 <td class="content">
-Ihr Registrierungspfad muss mit dem Registrierungspfad übereinstimmen, in dem Sie die Bilder in A verschoben haben ,Vorheriger Schritt.
+Ihr Registrierungspfad muss mit dem Registrierungspfad übereinstimmen, in dem Sie die Bilder in A verschoben haben <a href="#substep_image_local_registry_push">Vorheriger Schritt</a>.
 </td>
 </tr>
 </table>
@@ -2021,7 +2022,7 @@ Weitere Informationen zum Servicetyp „loadbalancer“ und Ingress finden Sie u
 </ul>
 </div>
 <div class="ulist">
-<div class="title">Was Sie und#8217;ll benötigen</div>
+<div class="title">Was Sie benötigen</div>
 <ul>
 <li>
 <p>In der CR-Spezifikation</p>
