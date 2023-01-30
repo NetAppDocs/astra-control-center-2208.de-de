@@ -70,7 +70,6 @@ NOTE: Bei diesen Anforderungen wird davon ausgegangen, dass Astra Control Center
 * *Astra Trident / ONTAP Konfiguration*: Astra Control Center erfordert, dass eine Storage-Klasse erstellt und als Standard-Storage-Klasse eingestellt wird. Astra Control Center unterstützt die folgenden ONTAP-Treiber von Astra Trident:
 +
 ** ontap-nas
-** ontap-nas-Flexgroup
 ** ontap-san
 ** ontap-san-Ökonomie
 
