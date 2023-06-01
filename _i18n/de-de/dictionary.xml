@@ -275,7 +275,6 @@
   <block id="4d40a8e178faea46fe31329801bc6573" category="list-text">*Image Registry*: Sie benötigen eine bereits vorhandene private Docker-Image-Registry, mit der Sie Astra Control Center-Bilder erstellen können. Sie müssen die URL der Bildregistrierung angeben, in der Sie die Bilder hochladen.</block>
   <block id="df819717a2baf5b48925d2b4cdaf4745" category="list-text">*Astra Trident / ONTAP Konfiguration*: Astra Control Center erfordert, dass eine Storage-Klasse erstellt und als Standard-Storage-Klasse eingestellt wird. Astra Control Center unterstützt die folgenden ONTAP-Treiber von Astra Trident:</block>
   <block id="8321592ce24c8a122ecf26a63cfca407" category="list-text">ontap-nas</block>
-  <block id="844e84da8e822b4a33c4d8188da97937" category="list-text">ontap-nas-Flexgroup</block>
   <block id="73a3350a1b91aeb6e2836fdf5975672c" category="list-text">ontap-san</block>
   <block id="3016c12c1db45f14c80c9c1731b9c26a" category="list-text">ontap-san-Ökonomie</block>
   <block id="a194c96c412e6851d927b9d0e77bba07" category="paragraph">Beim Klonen von Applikationen in OpenShift-Umgebungen muss das Astra Control Center OpenShift erlauben, Volumes anzuhängen und die Eigentümerschaft von Dateien zu ändern. Daher müssen Sie eine ONTAP Volume Export-Richtlinie konfigurieren, damit diese Vorgänge möglich sind. Sie können dies mit folgenden Befehlen tun:</block>
@@ -802,7 +801,6 @@
   <block id="e874bd0f330d9513016dc844dfd62e6f" category="paragraph">Folgen Sie der AWS Dokumentation, um die folgenden Schritte auszuführen. Siehe<block ref="b5a7979c22035fe192b9eb8d0cab1e4a" category="inline-link-rx"></block>.</block>
   <block id="9c7a256a23d947f541662b1e88bac33d" category="list-text">Virtuelles AWS Netzwerk erstellen.</block>
   <block id="92d9212a67ec9da982a091cf92cb4347" category="list-text">EC2 Computing-Instanzen prüfen. Dabei können es sich um einen Bare Metal Server oder VMs in AWS handelt.</block>
-  <block id="b881f78be517f5315cfb2d556f3448f7" category="list-text">Wenn der Instanztyp nicht bereits den Mindestanforderungen für Ressourcen von Astra für Master- und Worker-Nodes entspricht, ändern Sie den Instanztyp in AWS, um die Astra-Anforderungen zu erfüllen. Siehe <block ref="32be9c8362ea42075ea0b5d43bb3b5d0" category="inline-link-macro-rx"></block>.</block>
   <block id="b109e192f966bb3bb3e8cd30e1a59bfa" category="list-text">Erstellen Sie mindestens einen AWS S3-Bucket zum Speichern Ihrer Backups.</block>
   <block id="e5c5351f3ea6206a7f110205b4155acc" category="list-text">AWS Elastic Container Registry (ECR) erstellen, um alle ACC-Images zu hosten</block>
   <block id="9d58e473a9f64a9efe76c63ca0a30602" category="admonition">Wenn Sie den ECR nicht erstellen, kann Astra Control Center mit einem AWS Backend nicht auf die Monitoring-Daten von einem Cluster mit Cloud Volumes ONTAP zugreifen. Das Problem wird verursacht, wenn der Cluster, den Sie mit Astra Control Center ermitteln und verwalten möchten, keinen AWS ECR-Zugriff hat.</block>
@@ -913,9 +911,6 @@
   <block id="2cce86879561a32f83b0b211ad079596" category="section-title">Installieren Sie einen RedHat OpenShift-Cluster auf Azure</block>
   <block id="ac7776656696332f732a35f1a0662432" category="paragraph">Der erste Schritt ist die Installation eines RedHat OpenShift-Clusters unter Azure.</block>
   <block id="4f6685bd07b182993d024dcf856ff5ae" category="inline-link">OpenShift-Cluster wird auf Azure installiert</block>
-  <block id="fef256305fde869fc9c1b90f96dbebe5" category="list-text"><block ref="6613cf818db4dcdf36b939920f432c05" category="inline-link-rx"></block>.</block>
-  <block id="eed9d4fe807c07d271c864a1240c1c3f" category="inline-link">Installieren eines Azure-Kontos</block>
-  <block id="03936dba93dbfb5fc2df3ced6ce0b025" category="list-text"><block ref="2950a8cca92e141f7cc27cfe82878caa" category="inline-link-rx"></block>.</block>
   <block id="9b227636b2d4cea11291793360089d9f" category="section-title">Erstellen von Azure Ressourcengruppen</block>
   <block id="b15c7c1cada48f735340ffa1ec2e4b6d" category="paragraph">Erstellen Sie mindestens eine Azure-Ressourcengruppe.</block>
   <block id="f754cf28e9ca6bd457246cb85d6d5535" category="admonition">OpenShift kann möglicherweise eigene Ressourcengruppen erstellen. Zusätzlich sollten Sie auch Azure-Ressourcengruppen definieren. Siehe OpenShift-Dokumentation.</block>
@@ -2717,4 +2712,8 @@
   <block id="8ab08c3e81a1ee43c6b03a22403291db" category="section-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Stellen Sie im Notfall Ihre Applikationen mit dem neuesten Backup oder der neuesten Replizierung auf ein Remote-System wieder her</block>
   <block id="53c5fac0ba78b08ca3f0a270b746c5d2" category="section-title">Kennwort eines anderen Benutzers zurücksetzen</block>
   <block id="edb74efc05972c268b6cccf83996ac3e" category="section-title">Ändern Sie die Rolle eines Benutzers</block>
+  <block id="1ba6670409b12d2ecffe5f765b22636d" category="list-text">Wenn der Instanztyp nicht bereits den Mindestanforderungen für Ressourcen von Astra für Master- und Worker-Nodes entspricht, ändern Sie den Instanztyp in AWS, um die Astra-Anforderungen zu erfüllen.  Siehe <block ref="a41c664e3d2520e4c4deb907d0286272" category="inline-link-macro-rx"></block>.</block>
+  <block id="284a8b144f9341c750b469b574fb8c00" category="inline-link">Installation von OpenShift-Cluster auf Azure</block>
+  <block id="026f21beafa7ab4dd2e0a19c7d485bb6" category="inline-link">Installieren eines Azure-Kontos</block>
+  <block id="49ffba9fa4ce5bf749cec20def44c0b9" category="paragraph">Installationsanweisungen finden Sie in der Dokumentation zu RedHat auf<block ref="2b5694f45e8e8a8a0bd04ce92001fd2c" category="inline-link-rx"></block> Und<block ref="b57239f3f933c36abb901cdf3e168d8f" category="inline-link-rx"></block>.</block>
 </blocks>
